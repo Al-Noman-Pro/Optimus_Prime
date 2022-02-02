@@ -38,7 +38,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-bot_Img = "https://telegra.ph/file/50e0f59c0ef2184a0ea12.jpg"
+bot_Img = "https://telegra.ph/file/b9b8713a3376bea56e6b6.jpg"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
