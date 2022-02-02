@@ -30,6 +30,11 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Al-Noman-Pro/Optimus_Prime)
 
 
+# Special Features. 
+This is a group management bot but it can clone Google drive file , it can search files in drive , it can delete file from drive and it can count drive files.
+
+This bot also can download file from direct download link , youtoube video and audio, Mediafire, Zippyshare, Hxfile, Anonfiles, Antfiles URL, HTTP/HTTPS as File/Video in telegram.
+
 # 🔰 Credits 
 
 [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
