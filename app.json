@@ -32,13 +32,13 @@
 	 "required": false,
          "value": "true"
 	  },
-      "API_ID": {
-         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
           },
-      "API_HASH": {
-         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
 	  },
@@ -65,7 +65,7 @@
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "KLQKIBCPKWMNVHBN"
+         "value": ""
 	  },      
       "DEL_CMDS": {
          "description": "Set this to true if you want to delete command messages from users who don't have the perms to run that command.",
