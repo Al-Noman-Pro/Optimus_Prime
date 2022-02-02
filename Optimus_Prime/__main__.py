@@ -235,10 +235,7 @@ Hi ,I am Atrocious Robot.
 I'm a group management bot.
 """
 
-GROUP_START_BUTTONS = [[InlineKeyboardButton(text="☸ About Bot", url="https://telegra.ph/AL-NOMAN-12-30"),],
-
-                      [InlineKeyboardButton(text="✅ Add me in your group", url="t.me/AtrociousBot?startgroup=true")],]
-
+GROUP_START_BUTTONS = [InlineKeyboardButton(text="✅ Add me in your group", url="t.me/@Optimus_Prime_Pro_Bot?startgroup=true")]
 
 
 # for test purposes
