@@ -1,9 +1,8 @@
+import os 
+from PIL import Image, ImageDraw, ImageFont
 from Optimus_Prime.events import register
 from Optimus_Prime import OWNER_ID
 from Optimus_Prime import telethn as tbot
-import os 
-from PIL import Image, ImageDraw, ImageFont
-
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
@@ -20,13 +19,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./bot/resources/blackbg.jpg')
+    img = Image.open('./Optimus_Prime.modules.helper_funcs.logo_helper/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./bot/resources/Chopsic.otf", 500)
+    font = ImageFont.truetype("./Optimus_Prime.modules.helper_funcs.logo_helper/Chopsic.otf", 500)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -58,13 +57,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./bot/resources/blackbg.jpg')
+    img = Image.open('./Optimus_Prime.modules.helper_funcs.logo_helper/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./bot/resources/Maghrib.ttf", 700)
+    font = ImageFont.truetype("./Optimus_Prime.modules.helper_funcs.logo_helper/Maghrib.ttf", 700)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
