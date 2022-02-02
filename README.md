@@ -18,6 +18,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 # Deploy To Heroku .
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Al-Noman-Pro/Optimus_Prime)
 
+<p align="center"><a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 
 ❤ Credits 
 
