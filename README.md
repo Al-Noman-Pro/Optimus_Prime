@@ -10,6 +10,9 @@ A modular Telegram group management and drive clone bot running on Python-3.10.2
 
 Telegram bot version : 13.10
 Python : 3.10.2
+Telethon : Latest
+Pyrogram: Latest 
+Sqlalchemy : 1.3.24
 
 Originally a SaitamaRobot fork, Optimus_Prime evolved further and was built to be more robust. 
 In support group you can ask for help, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
