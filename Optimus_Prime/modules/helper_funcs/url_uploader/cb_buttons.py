@@ -20,9 +20,11 @@ from Optimus_Prime.modules.helper_funcs.url_uploader.youtube_dl_button import yo
 from Optimus_Prime.modules.helper_funcs.url_uploader.dl_button import ddl_call_back
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-# https://stackoverflow.com/a/37631799/4723940
 from PIL import Image
 
+CANCEL_STR = "Process Cancelled"
+UPLOAD_START = "Now Uploading.."
+ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
 
 @pyrogram.Client.on_callback_query()
 async def button(bot, update):
@@ -48,7 +50,7 @@ async def button(bot, update):
                     pass
                 await bot.edit_message_text(
                     chat_id=update.message.chat.id,
-                    text=Translation.CANCEL_STR,
+                    text=CANCEL_STR,
                     message_id=update.message.message_id
                 )
             elif index_extractor == "ALL":
@@ -65,7 +67,7 @@ async def button(bot, update):
                         reply_to_message_id=update.message.message_id,
                         progress=progress_for_pyrogram,
                         progress_args=(
-                            Translation.UPLOAD_START,
+                            UPLOAD_START,
                             update.message,
                             start_time
                         )
@@ -78,7 +80,7 @@ async def button(bot, update):
                     pass
                 await bot.edit_message_text(
                     chat_id=update.message.chat.id,
-                    text=Translation.ZIP_UPLOADED_STR.format(i, "0"),
+                    text=ZIP_UPLOADED_STR.format(i, "0"),
                     message_id=update.message.message_id
                 )
             else:
@@ -94,7 +96,7 @@ async def button(bot, update):
                     reply_to_message_id=update.message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        Translation.UPLOAD_START,
+                        UPLOAD_START,
                         update.message,
                         start_time
                     )
@@ -105,7 +107,7 @@ async def button(bot, update):
                     pass
                 await bot.edit_message_text(
                     chat_id=update.message.chat.id,
-                    text=Translation.ZIP_UPLOADED_STR.format("1", "0"),
+                    text=ZIP_UPLOADED_STR.format("1", "0"),
                     message_id=update.message.message_id
                 )
         elif "|" in cb_data:
