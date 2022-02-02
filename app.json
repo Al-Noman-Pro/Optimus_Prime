@@ -1,0 +1,217 @@
+{
+      "name": "Optimus_Prime",
+      "description": "Telegram Bot.",
+      "keywords": [
+         "telegram",
+         "bot",
+         "AL-NOMAN"
+      ],
+   "logo": "https://telegra.ph/file/7a3dfe4db964f905b5eba.jpg",
+   "repository": "https://github.com/Al-Noman-Pro/Optimus_Prime",
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "ACCOUNTS_ZIP_URL": {
+        "description": "(Optional) Only if you want to load your service accs externally from an index link. Archive your service accs json files to a zip file directly (don't archive the accounts folder. Select all the jsons inside and zip them only instead. Name the zip file with whatever you want, it doesn't matter). Fill this with the direct link of that file.",
+        "required": false,
+	"value": ""
+	  },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+	  },
+      "ALLOW_EXCL": {
+         "description": "Set this to true if you want ! to be a command prefix along with /. Recommended is true",
+	 "required": false,
+         "value": "true"
+	  },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+          },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+	  },
+      "AUTHORIZED_CHATS": {
+        "description": "Fill User ID and Chat ID of you want to authorize, Seprate them with space.",
+        "value": "",
+        "required": true
+	  },
+      "AUTO_DELETE_MESSAGE_DURATION": {
+        "description": "Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. Note: Set to -1 to never automatically delete messages.",
+        "required": true,
+        "value": "-1"
+	  },      
+      "BAN_STICKER": {
+         "description": "ID of the sticker you want to use when banning people.",
+         "required": false,
+         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+	  }, 
+      "BL_CHATS": {
+         "description": "A space separated list of group id you want blacklisted.",
+         "required": false,
+         "value": ""
+	  },      
+      "CASH_API_KEY": {
+         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
+         "required": true,
+         "value": "KLQKIBCPKWMNVHBN"
+	  },      
+      "DEL_CMDS": {
+         "description": "Set this to true if you want to delete command messages from users who don't have the perms to run that command.",
+         "required": false,
+	 "value": "true"
+	  },
+      "DEV_USERS": {
+         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Legend support then keep the current ID's here at they are and add yours.",
+         "required": false,
+         "value": "1063430421"
+          },
+      "DOWNLOAD_DIR": {
+         "description": "Download Directory",
+         "required": false,
+         "value": "/usr/src/app/downloads"
+          },
+      "DOWNLOAD_STATUS_UPDATE_INTERVAL": {
+         "description": "DOWNLOAD STATUS UPDATE INTERVAL",
+         "required": false,
+         "value": "4"
+          },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+	 "required": false,
+         "value": "ANYTHING"
+	  },
+      "EVENT_LOGS": {
+         "description": "Event logs group id number for note down important bot level events, recommend to make this public. If you don't add event log group id , gban will not work",
+         "required": true,
+         "value": ""
+	  },
+      "GDRIVE_FOLDER_ID": {
+        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "required": false,
+	"value": ""
+          },
+      "IGNORE_PENDING_REQUESTS": {
+        "description": "",
+        "required": false,
+	"value": "true"
+         },
+      "INDEX_URL": {
+        "description": "Refer to https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index The URL should not have any trailing '/'.",
+        "required": false,
+	"value": ""
+	  },
+      "INFOPIC": {
+         "description": "Userinfo picture Show In Info.",
+	 "required": false,
+         "value": "true"
+	  },
+      "IS_TEAM_DRIVE": {
+        "description": "Set to 'true' if GDRIVE_FOLDER_ID is from a Team Drive else false or Leave it empty.",
+        "required": false,
+        "value": "false"
+	  },      
+      "JOIN_LOGGER": {
+         "description": "Give a channel id number for saving bot log ",
+         "required": false,
+         "value": ""
+	  },
+      "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": "cleaner rss connection math"
+          },      
+      "OWNER_ID": {
+         "description": "Your telegram id number.",
+         "required": true,
+         "value": ""
+          },
+      "OWNER_USERNAME": {
+         "description": "Your telegram username without the @",
+	 "required": false,
+         "value": ""
+	  },
+      "SPAMWATCH_API": {
+         "description": "Spamwatch API Token, Get your token from -  https://t.me/SpamWatchBot.",
+         "required": false,
+         "value": ""
+          },
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "something://somewhat:user@hosturl:port/databasename  # needed for any database modules # its URI and not URL as herok and similar ones only accept it as such",
+         "required": false,
+         "value": ""
+          },
+      "STOP_DUPLICATE": {
+        "description": "If this field is set to true, bot will check file in Drive, if it is present in Drive, downloading or cloning will be stopped.",
+        "required": false,
+         "value": "true"
+	  }, 
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+	 "required": false,
+         "value": "true"
+	  },
+      "SUDO_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": "1063430421"
+          },
+      "SUPPORT_CHAT": {
+         "description": "Your Telegram support group username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to atrocious support than consider you made an enemy.",
+         "required": true,
+         "value": ""
+	  },
+      "SUPPORT_USERS": {
+         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "required": false,
+         "value": "1063430421"
+          },
+      "STATUS_LIMIT": {
+        "description": "",
+        "required": false,
+         "value": "4"
+	  },
+      "TIGER_USERS": {
+         "description": "A space separated list of user IDs who you wanna assign as tiger users.",
+         "required": false,
+         "value": "1063430421"
+          },
+      "TIME_API_KEY": {
+         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
+         "required": true,
+         "value": ""
+          }, 
+      "TOKEN": {
+         "description": "Your bot token. Get one from telegram BotFather ",
+         "required": true,
+         "value": ""
+	  },
+      "USE_SERVICE_ACCOUNTS": {
+        "description": "Whether to use Service Accounts or not. For this to work see 'Using Service Accounts' in repo.",
+        "required": false,
+        "value": "false"
+          },
+      "WHITELIST_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "required": false,
+         "value": "1063430421" 	 
+      }
+   },
+   "keywords": [
+      "telegram",
+      "bot"
+   ],
+   "name": "Optimus_Prime",
+   "repository": "https://github.com/Al-Noman-Pro/Optimus_Prime"
+}
