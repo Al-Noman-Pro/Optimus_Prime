@@ -1,6 +1,6 @@
 import os 
 from PIL import Image, ImageDraw, ImageFont
-from Optimus_Prime.events import register
+from Optimus_Prime.modules.helper_funcs.events import register
 from Optimus_Prime import OWNER_ID
 from Optimus_Prime import telethn as tbot
 
