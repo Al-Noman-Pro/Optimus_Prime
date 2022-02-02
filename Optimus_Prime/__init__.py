@@ -275,7 +275,7 @@ else:
     if not os.path.isdir(DOWNLOAD_LOCATION):
         os.makedirs(DOWNLOAD_LOCATION)
 
-plugins = dict(root="bot.modules.url_uploader")
+plugins = dict(root="Optimus_Prime.modules.helper_funcs.url_uploader")
 pbot = Client("PyrogramBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, plugins=plugins)
 telethn = TelegramClient("TelethonBot", API_ID, API_HASH)
 updater = tg.Updater(TOKEN, workers=8, use_context=True)
