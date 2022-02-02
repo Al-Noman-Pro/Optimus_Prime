@@ -15,7 +15,6 @@ from datetime import datetime
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from Optimus_Prime import EVENT_LOGS
 from Optimus_Prime import PROCESS_MAX_TIMEOUT
 from Optimus_Prime import TG_MAX_FILE_SIZE
 from Optimus_Prime.modules.helper_funcs.url_uploader.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
@@ -186,7 +185,6 @@ async def ddl_call_back(bot, update):
                         start_time
                     )
                 )
-                await audio.forward(EVENT_LOGS)
             elif tg_send_type == "file":
                 user = await bot.get_me()
                 mention = user["mention"]
@@ -204,7 +202,6 @@ async def ddl_call_back(bot, update):
                         start_time
                     )
                 )
-                await document.forward(EVENT_LOGS)
             elif tg_send_type == "vm":
                 user = await bot.get_me()
                 mention = user["mention"]
@@ -222,7 +219,6 @@ async def ddl_call_back(bot, update):
                         start_time
                     )
                 )
-                vm = await video_note.forward(EVENT_LOGS)
                 await vm.reply_text(f"🧍Submitted by: {update.from_user.mention}\n🤖 Uploaded by: {mention}")
             elif tg_send_type == "video":
                 user = await bot.get_me()
@@ -245,7 +241,6 @@ async def ddl_call_back(bot, update):
                         start_time
                     )
                 )
-                await video.forward(EVENT_LOGS)
             else:
                 logger.info("Did this happen? :\\")
             end_two = datetime.now()
