@@ -6,11 +6,11 @@
 
 #  Optimus Prime Bot .
 
-A modular Telegram group management and drive clone bot running on Python-3.10.2 with sqlalchemy database.
+🤖 A modular Telegram group management and drive clone bot running on Python with sqlalchemy database.
 
-Can be found on telegram as [Optimus Prime](t.me/Optimus_Prime_Pro_Bot)
+🔍 Can be found on telegram as [Optimus Prime](t.me/Optimus_Prime_Pro_Bot)
 
-Telegram Support Group [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
+📶 Telegram Support Group [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
 ✅Telegram bot version : 13.10
 
@@ -29,9 +29,8 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 # Deploy To Heroku .
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Al-Noman-Pro/Optimus_Prime)
 
-<p align="center"><a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 
-❤ Credits 
+# 🔰 Credits 
 
 [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
 
