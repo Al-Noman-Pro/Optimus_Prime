@@ -7,7 +7,9 @@
 #  Optimus Prime Bot .
 
 A modular Telegram group management and drive clone bot running on Python-3.10.2 with sqlalchemy database.
+
 Can be found on telegram as [Optimus Prime](t.me/Optimus_Prime_Pro_Bot)
+
 Telegram Support Group [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
 ✅Telegram bot version : 13.10
