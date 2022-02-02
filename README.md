@@ -8,7 +8,7 @@
 
 🤖 A modular Telegram group management and drive clone bot running on Python with sqlalchemy database.
 
-🔍 Can be found on telegram as [Optimus Prime](t.me/Optimus_Prime_Pro_Bot)
+🔍 Can be found on telegram as [Optimus Prime](https://t.me/Optimus_Prime_Pro_Bot)
 
 📶 Telegram Support Group [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
