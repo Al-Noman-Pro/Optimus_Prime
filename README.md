@@ -1,7 +1,7 @@
 - x -|│ “ Just some code who is a bot for fun! ” │| - x -
 
 
-![IMG_20210703_204651_417](https://telegra.ph/file/4ba775a03fa8f386ec855.jpg)
+![IMG_20210703_204651_417](https://telegra.ph/file/67dea540970333a4d7ea2.jpg)
 
 
 #  Atrocious Robot 
