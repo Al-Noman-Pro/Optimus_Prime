@@ -71,9 +71,6 @@ I can manage your group with lots of useful features.
 For commands and help press /help .
 """
 
-PM_START_BUTTONS = [[InlineKeyboardButton(text="☸ Help and commands", callback_data="help_back"),],
-
-                   [InlineKeyboardButton(text="✅ Add me in your group", url="t.me/AtrociousBot?startgroup=true")]]
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -203,7 +200,31 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)),
                 parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(PM_START_BUTTONS))
+                reply_markup=InlineKeyboardMarkup(
+                    [[
+                        InlineKeyboardButton(
+                            text="✅ Add Opimus to your group",
+                            url="t.me/{}?startgroup=true".format(
+                                context.bot.username))
+                    ],
+                     [
+                         InlineKeyboardButton(
+                             text="🚨 Support Group",
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                         InlineKeyboardButton(
+                             text="♂ Commands",
+                             callback_data="help_back")
+                    ], 
+                     [
+                         InlineKeyboardButton(
+                             text="📥 Mirror Bot Group ",
+                             url="https://t.me/+WKZqyWNHpLViMmI1")
+                    ], 
+                     [
+                         InlineKeyboardButton(
+                             text="🔁 Repository",
+                             url="https://github.com/Al-Noman-Pro/Optimus_Prime")
+                    ]]))
     else:           
         update.effective_message.reply_text(
             GROUP_START_TEXT,
