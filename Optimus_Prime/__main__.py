@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="✅ Add Opimus to your group",
+                            text="✅ Add Opimus Prime in your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
