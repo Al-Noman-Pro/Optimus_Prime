@@ -15,23 +15,22 @@ from datetime import datetime
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
+from PIL import Image
 from Optimus_Prime import PROCESS_MAX_TIMEOUT
 from Optimus_Prime import TG_MAX_FILE_SIZE
 from Optimus_Prime.modules.helper_funcs.url_uploader.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-# https://stackoverflow.com/a/37631799/4723940
-from PIL import Image
 
 AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "📥 Downloaded in {} seconds. \n👥 Join : @FlameOSGroup \n📤 Uploaded in {} seconds."
 CHUNK_SIZE = 128
 CUSTOM_CAPTION_UL_FILE = " " 
 DOWNLOAD_LOCATION = "./DOWNLOADS"
-DOWNLOAD_START = "📥 Trying to download"
+DOWNLOAD_START = "📥 Downloading"
 NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
 RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2.0GB due to Telegram API limitations."
 SLOW_URL_DECED = "It seems to a very slow URL"
-UPLOAD_START = "📤 Trying to upload"
+UPLOAD_START = "📤 Uploading"
 
 
 
