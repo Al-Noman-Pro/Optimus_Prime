@@ -26,7 +26,7 @@ Originally a SaitamaRobot fork, Optimus_Prime evolved further and was built to b
 In support group you can ask for help, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 For queries or any issues regarding the bot please open an issue ticket or visit us at [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
-# Deploy To Heroku .
+# Deploy To Heroku.
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Al-Noman-Pro/Optimus_Prime)
 
 
