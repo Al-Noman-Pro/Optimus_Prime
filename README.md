@@ -4,12 +4,12 @@
 ![IMG_20210703_204651_417](https://telegra.ph/file/67dea540970333a4d7ea2.jpg)
 
 
-#  Atrocious Robot 
+#  Optimus Prime Bot .
 
 A modular Telegram group management and drive clone bot running on Python-3.10.2 with sqlalchemy database.
 
-🚦 Telegram bot version : 13.10 🚥
-Python : 3.10.2 🚥 
+Telegram bot version : 13.10
+Python : 3.10.2
 
 Originally a SaitamaRobot fork, Optimus_Prime evolved further and was built to be more robust. 
 In support group you can ask for help, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
