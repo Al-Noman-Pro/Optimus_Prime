@@ -218,9 +218,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="📥 Mirror Bot Group ",
-                             url="https://t.me/+WKZqyWNHpLViMmI1")
-                    ], 
-                     [
+                             url="https://t.me/+WKZqyWNHpLViMmI1"),
                          InlineKeyboardButton(
                              text="🔁 Repository",
                              url="https://github.com/Al-Noman-Pro/Optimus_Prime")
