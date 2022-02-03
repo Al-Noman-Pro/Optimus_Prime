@@ -55,7 +55,7 @@ pretty_errors
 psutil
 psycopg2-binary
 PyYAML>5.0
-python-telegram-bot==13.10
+python-telegram-bot==13.11
 PyDictionary
 pynewtonmath
 pyrate-limiter
