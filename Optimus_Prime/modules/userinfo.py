@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-Stats_Photo = "https://telegra.ph/file/17ba6ca83b686c522b124.jpg"
+Stats_Photo = "https://telegra.ph/file/b9b8713a3376bea56e6b6.jpg"
 
 from Optimus_Prime import (
     DEV_USERS,
@@ -405,7 +405,7 @@ def set_about_me(update: Update, context: CallbackContext):
 dispatcher.run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>📊 Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>📊 Optimus_Primes Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_photo(Stats_Photo,result, parse_mode=ParseMode.HTML)
 
