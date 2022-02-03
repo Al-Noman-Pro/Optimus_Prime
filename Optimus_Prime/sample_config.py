@@ -5,7 +5,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open('{}/bot/{}'.format(os.getcwd(), config),
+    with open('{}/Optimus_Prime/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
@@ -16,14 +16,14 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 
+    API_ID = 123456  # integer value, dont use ""
     API_HASH = ""
     TOKEN = ""
-    OWNER_ID = 
-    OWNER_USERNAME = ""
-    SUPPORT_CHAT = ''
-    JOIN_LOGGER = 
-    EVENT_LOGS =
+    OWNER_ID = 123456789  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "awoo"
+    SUPPORT_CHAT = "awoo"  # Your own group for support, do not add the @
+    JOIN_LOGGER = 1234567890123 # Prints any new group the bot is added to, prints just the name and ID.
+    EVENT_LOGS = 1234567890123 # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
     SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
@@ -65,8 +65,8 @@ class Config(object):
     # Mirror Bot
     GDRIVE_FOLDER_ID = ""
     DOWNLOAD_DIR = "/usr/src/app/downloads"
-    DOWNLOAD_STATUS_UPDATE_INTERVAL = 
-    AUTO_DELETE_MESSAGE_DURATION = 
+    DOWNLOAD_STATUS_UPDATE_INTERVAL = 5
+    AUTO_DELETE_MESSAGE_DURATION = -1
     IS_TEAM_DRIVE = ""
     AUTHORIZED_CHATS = ""
     IGNORE_PENDING_REQUESTS = ""
