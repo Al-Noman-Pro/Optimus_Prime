@@ -1,5 +1,8 @@
 __help__ = """
 
+*live cricket score*
+/cs : Latest live scores from cricinfo.
+
 *Get Fake details from fakenamegenerator.com*                             
 /fakeinfo : returns fake information.
 
