@@ -9,7 +9,7 @@
 
 📶 Telegram Support Group [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
-✅Telegram bot version : 13.10
+✅Telegram bot version : 13.11
 
 ✅Python : 3.10.2
 
