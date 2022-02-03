@@ -231,7 +231,7 @@ def slash_get(update: Update, context: CallbackContext):
         note_name = str(noteid).strip(">").split()[1]
         get(update, context, note_name, show_none=False)
     except IndexError:
-        update.effective_message.reply_text("Wrong Note ID ð¾")
+        update.effective_message.reply_text("Wrong Note ID ⛔")
 
 
 dispatcher.run_async
@@ -251,7 +251,7 @@ def save(update: Update, context: CallbackContext):
         chat_id, note_name, text, data_type, buttons=buttons, file=content)
 
     msg.reply_text(
-        f"Yas! Added `{note_name}`.\nGet it with /get `{note_name}`, or `#{note_name}`",
+        f"Yes! Added `{note_name}`.\nGet it with /get `{note_name}`, or `#{note_name}`",
         parse_mode=ParseMode.MARKDOWN)
 
     if msg.reply_to_message and msg.reply_to_message.from_user.is_bot:
