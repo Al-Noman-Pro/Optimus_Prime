@@ -231,7 +231,7 @@ def slash_get(update: Update, context: CallbackContext):
         note_name = str(noteid).strip(">").split()[1]
         get(update, context, note_name, show_none=False)
     except IndexError:
-        update.effective_message.reply_text("Wrong Note ID 😾")
+        update.effective_message.reply_text("Wrong Note ID ð¾")
 
 
 dispatcher.run_async
@@ -466,7 +466,7 @@ def __import_data__(chat_id, data):
 
 
 def __stats__():
-    return f"� {sql.num_notes()} notes, across {sql.num_chats()} chats."
+    return f"• {sql.num_notes()} notes, across {sql.num_chats()} chats."
 
 
 def __migrate__(old_chat_id, new_chat_id):
