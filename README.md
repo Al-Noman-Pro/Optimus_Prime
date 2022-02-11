@@ -30,7 +30,6 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 # Special Features. 
 This is a group management bot but it can clone Google drive file , it can search files in drive , it can delete file from drive and it can count drive files.
 
-This bot also can download file from direct download link , youtube video and audio, Mediafire, Zippyshare, Hxfile, Anonfiles, Antfiles URL, HTTP/HTTPS as File/Video in telegram.
 
 # Note 
 You can use your own sqlalchemy database . If you don't have then use heroku-postgresql. After deploy go to herkou app resource option and search Heroku Postgres in add-ons and connect.
