@@ -1,13 +1,14 @@
 __help__ = """
 
-✳ Clone GDrive Files: /clone {gdrive shareable link} or reply with /clone.
+** This features is only for Bot owner. **
 
-✳ Count GDrive Or Gdtot Files: /count [drive_url][gdtot_url]: Count file/folder of Google Drive.
+✳ /clone {gdrive shareable link} or reply with /clone.
 
-✳ Delete GDrive Files: /del [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo). 
+✳ /count [drive_url][gdtot_url]: Count GDrive Or Gdtot Files: .
 
-✳ Search GDrive Files: /list [query]: Search in Google Drive(s) 
+✳ /del [drive_url]: Delete file/folder from Google Drive (Only Owner). 
 
-✳ Link To Telegram Upload : Just copy and paste direct download link on bot pm then select your file type .
+✳ /list [query]: Search in Google Drive(s) 
+
+✳ /tf : Reply any telegram file for Upload it to TransferSh for 14 days.
 """
-__mod_name__ = "Mirror Bot"
