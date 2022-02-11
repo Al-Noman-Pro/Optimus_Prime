@@ -1,6 +1,6 @@
 __help__ = """
 
-** This features is only for Bot owner. **
+*This features is only for Bot owner.*
 
 ✳ /clone {gdrive shareable link} or reply with /clone.
 
@@ -12,3 +12,4 @@ __help__ = """
 
 ✳ /tf : Reply any telegram file for Upload it to TransferSh for 14 days.
 """
+__mod_name__ = "Mirror Bot"
