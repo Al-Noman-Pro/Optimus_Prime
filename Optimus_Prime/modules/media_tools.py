@@ -6,7 +6,7 @@ __help__ = """
 *✳ Image Tools:*
 `/img` <text>: perform a image search.
 `/getqr` <reply to image>: Read QR code.
-/makeqr <reply to text>: Make QR code.
+`/makeqr` <reply to text>: Make QR code.
 
 *✳ Logo Maker:*
 `/logo` text:  Create your logo with yellow font and black background. 
