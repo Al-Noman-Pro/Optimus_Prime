@@ -26,7 +26,7 @@ class Config(object):
     EVENT_LOGS = 1234567890123 # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
-    ARQ_API_KEY = "GBVANC-POIBJH-XAYVHT-XZBPTG-ARQ"
+    ARQ_API_KEY = ""
     ARQ_API_URL = "https://thearq.tech/"
     SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
     LOAD = []
