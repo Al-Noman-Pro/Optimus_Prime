@@ -5,8 +5,11 @@ import time
 import spamwatch
 import threading
 import telegram.ext as tg
+
+from aiohttp import ClientSession
 from telegram.ext import CallbackContext
 from pyrogram import Client, errors
+from Python_ARQ import ARQ
 from telethon import TelegramClient
 
 StartTime = time.time()
@@ -86,6 +89,8 @@ if ENV:
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     API_HASH = os.environ.get("API_HASH", None)
     API_ID = os.environ.get("API_ID", None)
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
+    ARQ_API_URL = os.environ.get("ARQ_API_URL", None)
     BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg")
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     CERT_PATH = os.environ.get("CERT_PATH")
@@ -203,6 +208,8 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
+    ARQ_API_KEY = Config.ARQ_API_KEY
+    ARQ_API_URL = Config.ARQ_API_URL
     BACKUP_PASS = Config.BACKUP_PASS
     BAN_STICKER = Config.BAN_STICKER
     CASH_API_KEY = Config.CASH_API_KEY
@@ -275,7 +282,16 @@ else:
     if not os.path.isdir(DOWNLOAD_LOCATION):
         os.makedirs(DOWNLOAD_LOCATION)
 
-plugins = dict(root="Optimus_Prime.modules.helper_funcs.url_uploader")
+
+
+# Install aiohttp session
+print("[Optimus Prime]: Initializing AIOHTTP Session")
+aiohttpsession = ClientSession()    
+    
+# Install arq
+print("[Optimus Prime]: Initializing ARQ Client")
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
 pbot = Client("PyrogramBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 telethn = TelegramClient("TelethonBot", API_ID, API_HASH)
 updater = tg.Updater(TOKEN, workers=8, use_context=True)
