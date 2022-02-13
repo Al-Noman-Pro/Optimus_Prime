@@ -29,6 +29,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 
 # Special Features. 
 This is a group management bot but it can clone Google drive file , it can search files in drive , it can delete file from drive and it can count drive files.
+It can also upload telegram file to TransferSh Server For 14 days .
 
 
 # Note 
