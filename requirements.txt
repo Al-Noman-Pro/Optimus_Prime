@@ -84,6 +84,7 @@ ujson
 youtube_dl
 youtube-search-python
 
+wget
 wikipedia
 
 zalgo-text
