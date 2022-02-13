@@ -47,7 +47,7 @@ You can use your own sqlalchemy database . If you don't have then use heroku-pos
 
 [Legend X](https://github.com/LEGENDXOP)
 
-[MR. Joker Bot ](
+[MR. Joker Bot ](https://github.com/kjeymax/MR-JOKER_BOT)
 
 [Pyrogram](https://github.com/pyrogram/pyrogram)
 
