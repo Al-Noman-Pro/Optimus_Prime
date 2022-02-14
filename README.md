@@ -19,7 +19,7 @@
  
 ✅Sqlalchemy : 1.3.24
 
-Originally a SaitamaRobot fork, Optimus_Prime evolved further and was built to be more robust. 
+Originally a SaitamaRobot fork. Optimus_Prime evolved further and was built to be more robust. 
 In support group you can ask for help, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 For queries or any issues regarding the bot please open an issue ticket or visit us at [AtrociousBotSupport](https://t.me/AtrociousBotSupport)
 
