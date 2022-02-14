@@ -1,29 +1,25 @@
 __help__ = """
 
 *live cricket score*
-/cs : Latest live scores from cricinfo.
+*/cs* : Latest live scores from cricinfo.
 
 *Get Fake details from fakenamegenerator.com*                             
-/fakeinfo : returns fake information.
+*/fakeinfo* : returns fake information.
 
 *GPS*
-/gps <Place> : Show Location on a map.
- 
-*Blue Text Cleaner*
-/cleanblue on : Turn bluetext cleaner on.
-/cleanblue off : Turn bluetext cleaner off.
+*/gps* <Place> : Show Location on a map.
 
-*Grammer*
-/t <reply> : Show grammer corrected text.
+*Show Json*
+*/json* : Reply any message with /json .
  
 *Style Text*
-/weebify : Weebify Text.
-/square : square Text.
-/blue : Blues text.
+*/weebify* : Weebify Text.
+*/square* : square Text.
+*/blue* : Blues text.
 
 *Zip - Unzip*
-/zip: reply to a telegram file to compress it in .zip format.
-/unzip: reply to a telegram file to decompress it from the .zip format.
+*/zip* : reply to a telegram file to compress it in .zip format.
+*/unzip* : reply to a telegram file to decompress it from the .zip format.
 
 """
 __mod_name__ = "More Tools"
