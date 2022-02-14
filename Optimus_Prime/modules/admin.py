@@ -436,16 +436,15 @@ def adminlist(update, context):
 
 
 __help__ = """
-`/admins`*:* list of admins in the chat
-
-*Admins only:*
-`/pin`*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
-`/unpin`*:* unpins the currently pinned message
-`/invitelink`*:* gets invitelink
-`/promote`*:* promotes the user replied to
-`/demote`*:* demotes the user replied to
-`/title <title here>`*:* sets a custom title for an admin that the bot promoted
-`/admincache`*:* force refresh the admins list
+*/admins:* list of admins in the chat.
+*/pin:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
+*/unpin:* unpins the currently pinned message
+*/invitelink:* gets invitelink
+*/promote:* promotes the user replied to
+*/demote:* demotes the user replied to
+*/title <title here>:* sets a custom title for an admin that the bot promoted
+*/admincache:* force refresh the admins list
+*/zombies:* Remove deleted account from group.
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
