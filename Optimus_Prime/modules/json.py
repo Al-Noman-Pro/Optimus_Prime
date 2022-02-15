@@ -4,7 +4,7 @@ from telethon import types
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from Optimus_Prime.events import register
+from Optimus_Prime.modules.helper_funcs.events import register
 from Optimus_Prime import telethn as borg
 
 
