@@ -11,13 +11,20 @@ class CustomFilters(object):
 
     owner_filter = _OwnerFilter()
 
-    class _AuthorizedChatFilter(MessageFilter):
+    class _AuthorizedUserFilter(MessageFilter):
         def filter(self, message):
             id = message.from_user.id
             return bool(id in AUTHORIZED_CHATS or id == OWNER_ID)
 
-    authorized_chat = _AuthorizedChatFilter()
+    authorized_user = _AuthorizedUserFilter()
+
+    class _AuthorizedChat(MessageFilter):
+        def filter(self, message):
+            return bool(message.chat.id in AUTHORIZED_CHATS)
+
+    authorized_chat = _AuthorizedChat()
   
+
     class _Supporters(MessageFilter):
         def filter(self, message: Message):
             return bool(message.from_user and message.from_user.id in SUPPORT_USERS)
