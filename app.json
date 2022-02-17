@@ -17,11 +17,6 @@
     }     
   ],      
    "env": {
-      "ACCOUNTS_ZIP_URL": {
-        "description": "(Optional) Only if you want to load your service accs externally from an index link. Archive your service accs json files to a zip file directly (don't archive the accounts folder. Select all the jsons inside and zip them only instead. Name the zip file with whatever you want, it doesn't matter). Fill this with the direct link of that file.",
-        "required": false,
-	"value": ""
-	  },
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
@@ -53,7 +48,7 @@
          "value": ""
 	  },
       "AUTHORIZED_CHATS": {
-        "description": "Fill User ID and Chat ID of you want to authorize, Seprate them with space.",
+        "description": "Fill User ID and Chat ID of you want to authorize for use gdrive /clone command .",
         "value": "",
         "required": true
 	  },
