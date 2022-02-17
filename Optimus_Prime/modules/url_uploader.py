@@ -110,7 +110,7 @@ async def download_coroutine(session, url, file_name, event, start, bot):
 
 **File Size:** {}
 
-**@AtrociousBot**""".format(
+**@Optimus_Prime_Pro_Bot**""".format(
                 url,
                 os.path.basename(file_name).replace("%20", " "),
                 humanbytes(total_length)),
@@ -194,7 +194,7 @@ async def up(event):
                 event.chat.id,
                 dosya,
                 force_document=True,
-                caption=f"Uploaded By @AtrociousBot")
+                caption=f"Uploaded By @Optimus_Prime_Pro_Bot)
         except Exception as e:
             traceback.print_exc()
 
