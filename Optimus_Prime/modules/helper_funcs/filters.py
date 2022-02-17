@@ -18,13 +18,6 @@ class CustomFilters(object):
 
     authorized_chat = _AuthorizedChatFilter()
   
-    class _AuthorizedUserFilter(MessageFilter):
-        def filter(self, message):
-            id = message.from_user.id
-            return bool(id in AUTHORIZED_CHATS or id == OWNER_ID)
-
-    authorized_user = _AuthorizedUserFilter()
-
     class _Supporters(MessageFilter):
         def filter(self, message: Message):
             return bool(message.from_user and message.from_user.id in SUPPORT_USERS)
