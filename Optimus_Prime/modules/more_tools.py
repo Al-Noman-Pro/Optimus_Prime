@@ -9,6 +9,9 @@ __help__ = """
 *GPS*
 */gps* <Place> : Show Location on a map.
 
+*Image To Pdf*
+*/pdf* : Reply to an image (as document) or group of images to make as pdf. 
+
 *Show Json*
 */json* : Reply any message with /json .
  
