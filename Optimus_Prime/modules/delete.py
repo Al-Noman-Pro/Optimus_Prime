@@ -1,12 +1,38 @@
 from threading import Thread
 from telegram import Update
 from telegram.ext import CommandHandler
+from telegram.message import Message
 
-from Optimus_Prime import dispatcher, LOGGER
-from Optimus_Prime.modules.helper_funcs.clone_helper.message_utils import auto_delete_message, sendMessage
+from Optimus_Prime import dispatcher, LOGGER, AUTO_DELETE_MESSAGE_DURATION
 from Optimus_Prime.modules.helper_funcs.filters import CustomFilters
 from Optimus_Prime.modules.helper_funcs.clone_helper import gdriveTools
-from Optimus_Prime.modules.helper_funcs.clone_helper.bot_utils import is_gdrive_link
+
+def is_gdrive_link(url: str):
+    return "drive.google.com" in url
+
+def auto_delete_message(bot, cmd_message: Message, bot_message: Message):
+    if AUTO_DELETE_MESSAGE_DURATION != -1:
+        sleep(AUTO_DELETE_MESSAGE_DURATION)
+        try:
+            # Skip if None is passed meaning we don't want to delete bot xor cmd message
+            deleteMessage(bot, cmd_message)
+            deleteMessage(bot, bot_message)
+        except AttributeError:
+            pass
+
+
+def sendMessage(text: str, bot, update: Update):
+    try:
+        return bot.send_message(update.message.chat_id,
+                            reply_to_message_id=update.message.message_id,
+                            text=text, allow_sending_without_reply=True, parse_mode='HTMl', disable_web_page_preview=True)
+    except RetryAfter as r:
+        LOGGER.warning(str(r))
+        sleep(r.retry_after * 1.5)
+        return sendMessage(text, bot, update)
+    except Exception as e:
+        LOGGER.error(str(e))
+        return
 
 
 def deletefile(update, context):
@@ -28,4 +54,5 @@ def deletefile(update, context):
     Thread(target=auto_delete_message, args=(context.bot, update.message, reply_message)).start()
 
 delete_handler = CommandHandler("del", deletefile, filters=CustomFilters.owner_filter, run_async=True)
+
 dispatcher.add_handler(delete_handler)
