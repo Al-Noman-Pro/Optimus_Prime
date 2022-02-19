@@ -44,5 +44,6 @@ def countNode(update, context):
     else:
         sendMessage('Send Gdrive link along with command or by replying to the link by command', context.bot, update)
 
-count_handler = CommandHandler("count", countNode, run_async=True)
+count_handler = CommandHandler("count", countNode, filters=CustomFilters.authorized_chat | CustomFilters.authorized_user | CustomFilters.owner_filter, run_async=True)
+
 dispatcher.add_handler(count_handler)
