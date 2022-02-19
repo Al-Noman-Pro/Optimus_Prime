@@ -92,5 +92,5 @@ def cloneNode(update, context):
     else:
         sendMessage('Send Gdrive or gdtot link along with command or by replying to the link by command', context.bot, update)
 
-clone_handler = CommandHandler("clone", cloneNode, filters=CustomFilters.authorized_chat, run_async=True)
+clone_handler = CommandHandler("clone", cloneNode, filters=CustomFilters.authorized_chat | CustomFilters.authorized_user | CustomFilters.owner_filter, run_async=True)
 dispatcher.add_handler(clone_handler)
