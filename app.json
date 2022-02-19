@@ -72,6 +72,11 @@
          "required": true,
          "value": ""
 	  },      
+      "CRYPT": {
+         "description": "CRYPT from ( https://gdtot.nl/ ) for gdtot_link clone",
+         "required": false,
+         "value": ""
+	  },      
       "DEL_CMDS": {
          "description": "Set this to true if you want to delete command messages from users who don't have the perms to run that command.",
          "required": false,
@@ -147,6 +152,11 @@
 	 "required": false,
          "value": ""
 	  },
+      "PHPSESSID": {
+         "description": "PHPSESSID from ( https://gdtot.nl/ ) for gdtot_link clone",
+         "required": false,
+         "value": ""
+          },
       "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get your token from -  https://t.me/SpamWatchBot.",
          "required": false,
