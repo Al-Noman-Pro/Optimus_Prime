@@ -39,6 +39,8 @@ hachoir
 html2text
 humanize
 
+img2pdf
+
 jikanpy
 
 lk21
