@@ -2,7 +2,6 @@ aiofiles
 aiogram
 aiohttp
 aria2p
-aiohttp>=2.2.5
 alphabet_detector
 asyncio
 
