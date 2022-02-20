@@ -250,24 +250,6 @@ if os.path.exists("drive_folder"):
                 INDEX_URLS.append(None)
 
 
-DRIVES_NAMES.append("Main")
-DRIVES_IDS.append(parent_id)
-if os.path.exists("drive_folder"):
-    with open("drive_folder", "r+") as f:
-        lines = f.readlines()
-        for line in lines:
-            try:
-                temp = line.strip().split()
-                DRIVES_IDS.append(temp[1])
-                DRIVES_NAMES.append(temp[0].replace("_", " "))
-            except:
-                pass
-            try:
-                INDEX_URLS.append(temp[2])
-            except IndexError as e:
-                INDEX_URLS.append(None)
-
-
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
