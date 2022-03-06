@@ -11,7 +11,7 @@
 
 ✅Telegram bot version : 13.11
 
-✅Python : 3.10.2
+✅Python : 3.9.10
 
 ✅Telethon : Latest
 
