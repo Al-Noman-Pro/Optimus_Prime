@@ -5,6 +5,11 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
+from datetime import datetime
+from hachoir.metadata import extractMetadata
+from hachoir.parser import createParser
+from telethon.tl.types import DocumentAttributeVideo
+
 from Optimus_Prime import TEMP_DOWNLOAD_DIRECTORY
 from Optimus_Prime import telethn as client
 from Optimus_Prime.modules.helper_funcs.events import register
@@ -36,16 +41,12 @@ async def _(event):
         return
 
     if not event.is_reply:
-        await event.reply("Reply to a file to compress it.")
         return
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply(
-                "You are not admin.. You can't use this command.. But you can use in my pm"
-            )
             return
 
-    mone = await event.reply("Please wait...")
+    mone = await event.reply("Zipping .. Please wait...")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -76,12 +77,6 @@ def zipdir(path, ziph):
             ziph.write(os.path.join(root, file))
             os.remove(os.path.join(root, file))
 
-
-from datetime import datetime
-
-from hachoir.metadata import extractMetadata
-from hachoir.parser import createParser
-from telethon.tl.types import DocumentAttributeVideo
 
 extracted = TEMP_DOWNLOAD_DIRECTORY + "extracted/"
 thumb_image_path = TEMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
@@ -115,16 +110,12 @@ async def _(event):
         return
 
     if not event.is_reply:
-        await event.reply("Reply to a zip file.")
         return
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply(
-                " Hai.. You are not admin.. You can't use this command.. But you can use in my pm"
-            )
             return
 
-    mone = await event.reply("Processing ...")
+    mone = await event.reply("Unzipping .. Processing ...")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -199,5 +190,3 @@ def get_lst_of_files(input_directory, output_lst):
             return get_lst_of_files(current_file_name, output_lst)
         output_lst.append(current_file_name)
     return output_lst
-
-
