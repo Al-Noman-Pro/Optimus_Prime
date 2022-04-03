@@ -27,9 +27,6 @@ download_dict_lock = threading.Lock()
 status_reply_dict = {}
 status_reply_dict_lock = threading.Lock()
 
-
-StartTime = time.time()
-
 # enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
