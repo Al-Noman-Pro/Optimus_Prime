@@ -65,7 +65,8 @@ class Config(object):
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
     SPAMWATCH_SUPPORT_CHAT = ""
-    
+    WALL_API = ""
+
     # Mirror Bot
     AUTHORIZED_CHATS = ""
     GDRIVE_FOLDER_ID = ""
