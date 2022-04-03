@@ -207,11 +207,9 @@ else:
     API_HASH = Config.API_HASH
     ARQ_API_KEY = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
-    BACKUP_PASS = Config.BACKUP_PASS
     BAN_STICKER = Config.BAN_STICKER
     CASH_API_KEY = Config.CASH_API_KEY
     CERT_PATH = Config.CERT_PATH
-    DB_NAME = Config.DB_NAME
     DEL_CMDS = Config.DEL_CMDS
     EVENT_LOGS = Config.EVENT_LOGS
     LOAD = Config.LOAD
