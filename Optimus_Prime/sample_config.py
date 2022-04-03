@@ -53,6 +53,7 @@ class Config(object):
     PORT = 5000
     DEL_CMDS = True  #Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
+    STRICT_GMUTE = True
     WORKERS = 8  # Number of subthreads to use. Set as number of threads your processor uses
     BAN_STICKER = ''  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
