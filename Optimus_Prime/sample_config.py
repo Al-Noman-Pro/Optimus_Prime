@@ -38,7 +38,6 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = ""
 
     #OPTIONAL
-    ## Authorized group for mirror bot.
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
     SUDO_USERS = get_user_list('elevated_users.json', 'sudos')
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
@@ -65,6 +64,7 @@ class Config(object):
     SPAMMERS = None
     
     # Mirror Bot
+    AUTHORIZED_CHATS = ""
     GDRIVE_FOLDER_ID = ""
     DOWNLOAD_DIR = "/usr/src/app/downloads"
     DOWNLOAD_STATUS_UPDATE_INTERVAL = 5
