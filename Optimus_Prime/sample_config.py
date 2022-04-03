@@ -38,6 +38,7 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = ""
 
     #OPTIONAL
+    AI_API_KEY = ""
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
     SUDO_USERS = get_user_list('elevated_users.json', 'sudos')
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
