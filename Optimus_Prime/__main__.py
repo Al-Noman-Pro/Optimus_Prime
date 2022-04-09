@@ -235,9 +235,9 @@ Hi ,I am Optimus Prime Bot.
 I'm a group management bot.
 """
 
-GROUP_START_BUTTONS = [[InlineKeyboardButton(text="☸ Repository", url="https://github.com/Al-Noman-Pro/Optimus_Prime"),],
+GROUP_START_BUTTONS = [[InlineKeyboardButton(text="☸ Repository", url="https://github.com/Al-Noman-Pro/Optimus_Prime")],
 
-                      [InlineKeyboardButton(text="✅ Add me in your group", url="t.me/Optimus_Prime_Pro_Bot?startgroup=true")],]
+                      [InlineKeyboardButton(text="✅ Add me in your group", url="t.me/Optimus_Prime_Pro_Bot?startgroup=true")]]
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
